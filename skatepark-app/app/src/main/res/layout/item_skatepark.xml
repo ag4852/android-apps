@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:padding="3dp"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/skateparksPage_parkname_tv"
+        android:gravity="start"
+        android:layout_weight="2"
+        android:layout_gravity="center_vertical"
+        android:background="#CCCFDD"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Park Name"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/skateparksPage_parkrating_tv"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="#E9EAEF"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Ratings"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/skateparksPage_nooffav_tv"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="#E9EAEF"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="# Favs"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/skateparksPage_noofratings_tv"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="#E9EAEF"
+        android:textSize="11sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="#Ratings"/>
+
+</LinearLayout>

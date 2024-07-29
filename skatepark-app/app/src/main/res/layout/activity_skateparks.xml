@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/skateparksPage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".SkateparksActivity">
+
+    <LinearLayout
+        android:id="@+id/skateparksPage_header_ll"
+        android:layout_width="366dp"
+        android:layout_height="27dp"
+        android:padding="3dp"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/skateparksPage_header_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:background="#3F51B5"
+            android:gravity="start"
+            android:text="Skate Park"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/skateparksPage_header_rating_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="Rating"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/skateparksPage_header_favs_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="# of Favs"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/skateparksPage_header_totalrating_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#3F51B5"
+            android:gravity="center"
+            android:text="# Ratings"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/skateparksPage_parks_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skateparksPage_header_ll"
+        app:layout_constraintTop_toBottomOf="@+id/skateparksPage_header_ll" />
+
+    <Button
+        android:id="@+id/skateparksPage_logout_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

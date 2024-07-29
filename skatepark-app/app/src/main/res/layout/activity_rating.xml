@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    tools:context=".RatingActivity">
+
+    <TextView
+        android:id="@+id/ratingPage_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Skate Park Rating"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+     <TextView
+        android:id="@+id/ratingPage_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="South Brunswick"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ratingPage_vicinity_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Vincinity"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingPage_rating_sb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:numStars="5"
+        android:rating="0"
+        android:saveEnabled="true"
+        android:stepSize="0.5"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/ratingPage_isfav_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:width="150dp"
+        android:text="Favorite ?"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ratingPage_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:textAllCaps="false"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/ratingPage_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
